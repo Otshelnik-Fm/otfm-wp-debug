@@ -32,9 +32,28 @@ Third argument: keys who hide in output. For example, post_content - contains a 
 <code>vd( $variable, [ 'post_content', 'post_name' ] )</code> - this magic: second argument, if you need exclude
 key|keys
 
+## Left Query Panel
+
+The query panel shows the running time of php, the number of database queries and the memory consumed.  
+The previous request is also indicated in parentheses. Past values of indicators help with debugging - it can be a cache
+indicator or a quantitative indicator of the changes you have made.
+
+[Example](http://joxi.ru/Dr8eO04iKk4NDm)
+
+By default, the query panel is disabled. You can show it by adding a GET-request to the :site.com/?wpdbg   
+Or find in otfm-wp-debug.php string: <code>$wpdbg_settings['left_panel'] = false;</code>  
+Parameters:  
+false - disabled;   
+true - enabled all (in dev environment);   
+'admin' - if visible in admin;  
+Set the values you need
+
 -----------
 
 ## Changelog
+
+**2022-03-14**  
+v1.1.0 Added left query panel. Find string <code>$wpdbg_settings['left_panel'] = false;</code> and see docblock
 
 **2022-02-28**  
 v1.0.0
