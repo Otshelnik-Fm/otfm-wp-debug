@@ -1,8 +1,8 @@
 ## About
 
 OtFm WP-Debug is a MU-WordPress plugin for debug  
-easy, simple, clean - [screenshot](http://joxi.ru/Q2KdBJLTyzvQdA)
-And Left Query Panel [screenshot](http://joxi.ru/Dr8eO04iKk4NDm)
+easy, simple, clean: [screenshot](http://joxi.ru/Q2KdBJLTyzvQdA)  
+And Left Query Panel: [screenshot](http://joxi.ru/Dr8eO04iKk4NDm)
 
 -----------
 
