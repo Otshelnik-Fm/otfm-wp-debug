@@ -55,7 +55,9 @@ Set the values you need
 ## Changelog
 
 **2022-03-14**  
-v1.1.0 Added left query panel. Find string <code>$wpdbg_settings['left_panel'] = false;</code> and see docblock
+v1.1.0
+
+* Added left query panel. Find string <code>$wpdbg_settings['left_panel'] = false;</code> and see docblock
 
 **2022-02-28**  
 v1.0.0
