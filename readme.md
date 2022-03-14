@@ -24,10 +24,11 @@ Work!
 5. <code>vdx()</code> (var_dump XHR) - for ajax debugging (see incoming POST data on the browser's XHR tab)
    [Example](http://joxi.ru/p27e3MbinQNYlr)
 
-<code>vd( $variable, 1, [ 'post_content', 'post_name' ] )</code>
+<code>vd( $variable, 1, [ 'post_content', 'post_name' ] )</code>  
 First argument: $variable - debugging data  
 Second argument: 1 - (default:false) - optional parameter. If you need to output in a fixed window on the top left.
-Useful for output bottlenecks. Useless for cycles. Fixed block can be hidden (spoiler on details tag)
+Useful for output bottlenecks. Useless for cycles.  
+Fixed block can be hidden (spoiler on details tag)  
 Third argument: keys who hide in output. For example, post_content - contains a large amount of data
 
 <code>vd( $variable, [ 'post_content', 'post_name' ] )</code> - this magic: second argument, if you need exclude
