@@ -1,8 +1,8 @@
 ## About
 
 OtFm WP-Debug is a MU-WordPress plugin for debug.  
-Easy, simple, clean: <a href="http://joxi.ru/Q2KdBJLTyzvQdA" target="_blank">screenshot</a>  
-And Left Query Panel: <a href="http://joxi.ru/Dr8eO04iKk4NDm" target="_blank">screenshot</a>
+Easy, simple, clean: [screenshot](http://joxi.ru/Q2KdBJLTyzvQdA){:target="_blank"}  
+And Left Query Panel: [screenshot](http://joxi.ru/Dr8eO04iKk4NDm){:target="_blank"}
 
 -----------
 
@@ -22,7 +22,7 @@ Work!
 4. <code>vdl()</code> (var_dump log) - we write to the server logs. When we can't display it on the screen (or this is
    the ajax request debug, for example).
 5. <code>vdx()</code> (var_dump XHR) - for ajax debugging (see incoming POST data on the browser's XHR tab)
-   <a href="http://joxi.ru/p27e3MbinQNYlr" target="_blank">Example</a>
+   [Example](http://joxi.ru/p27e3MbinQNYlr)
 
 <code>vd( $variable, 1, [ 'post_content', 'post_name' ] )</code>  
 First argument: $variable - debugging data  
@@ -40,7 +40,7 @@ The query panel shows the running time of php, the number of database queries an
 The previous request is also indicated in parentheses. Past values of indicators help with debugging - it can be a cache
 indicator or a quantitative indicator of the changes you have made.
 
-<a href="http://joxi.ru/Dr8eO04iKk4NDm" target="_blank">Example</a>
+[Example](http://joxi.ru/Dr8eO04iKk4NDm){:target="_blank"}
 
 By default, the query panel is disabled. You can show it by adding a GET-request to the :site.com/?wpdbg   
 Or find in otfm-wp-debug.php string: <code>$wpdbg_settings['left_panel'] = false;</code>  
