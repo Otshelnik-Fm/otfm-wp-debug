@@ -50,9 +50,21 @@ true - enabled all (in dev environment);
 'admin' - if visible in admin;  
 Set the values you need
 
+Or set <code>site.com/?wpdbg</code> - to show panel
+
+If the panel is enabled in the config and interferes - enter <code>site.com/?panel=off</code> and it will not be output
+
 -----------
 
 ## Changelog
+
+**2022-08-01**  
+v1.2.0
+
+* If the panel is enabled in the config and interferes - enter <code>site.com/?panel=off</code> and it will not be
+  output
+* set left panel visible for 'admin'
+* line breaks in the code and minor edits
 
 **2022-03-14**  
 v1.1.0

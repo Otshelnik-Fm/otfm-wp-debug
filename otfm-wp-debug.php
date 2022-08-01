@@ -4,7 +4,7 @@
   MU Plugin Name: OtFm WP-Debug
   Plugin URI: https://github.com/Otshelnik-Fm/otfm-wp-debug
   Description: OtFm WP-Debug is a MU-WordPress plugin for debug
-  Version: 1.1.0
+  Version: 1.2.0
   Author: Otshelnik-Fm
   Author URI: https://otshelnik-fm.ru/
   License: MIT
@@ -28,7 +28,7 @@ global $wpdbg_settings;
  * true - enabled all (in dev environment);
  * 'admin' - if visible in admin;
  */
-$wpdbg_settings['left_panel'] = false;
+$wpdbg_settings['left_panel'] = 'admin';
 
 /**
  * vd() (like var_dump) - convenient debugging instead of print_r or var_dump
@@ -213,10 +213,14 @@ function wpdbg_panel() {
 		return false;
 	}
 
-	$recourses = wpdbg_meter_styles();
-	$recourses .= wpdbg_meter_scripts();
+	if ( isset( $_GET['panel'] ) && 'off' === $_GET['panel'] ) {
+		return false;
+	}
 
-	echo $recourses . '<div id="wpdbg_box">' . wpdbg_meter() . '</div>';
+	$recourses = "\r\n" . wpdbg_meter_styles();
+	$recourses .= "\r\n" . wpdbg_meter_scripts();
+
+	echo $recourses . "\r\n<div id='wpdbg_box'>" . wpdbg_meter() . "</div>\r\n";
 }
 
 // метрика
@@ -253,7 +257,7 @@ function wpdbg_meter_styles() {
 	gap: 0 6px;
 }
 @keyframes wpdbgA{100%{opacity:1;}}
-#wpdbg_box > div:nth-child(2n) {
+#wpdbg_box > :nth-child(2n) {
 	color: #70b340;
 	font-size: 13px;
 	margin-top: 6px;
