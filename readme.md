@@ -1,8 +1,8 @@
 ## About
 
 OtFm WP-Debug is a MU-WordPress plugin for debug.  
-Easy, simple, clean: [screenshot](http://joxi.ru/Q2KdBJLTyzvQdA){:target="_blank"}  
-And Left Query Panel: [screenshot](http://joxi.ru/Dr8eO04iKk4NDm){:target="_blank"}
+Easy, simple, clean: [screenshot](http://joxi.ru/Q2KdBJLTyzvQdA)  
+And Left Query Panel: [screenshot](http://joxi.ru/Dr8eO04iKk4NDm)
 
 -----------
 
@@ -40,7 +40,7 @@ The query panel shows the running time of php, the number of database queries an
 The previous request is also indicated in parentheses. Past values of indicators help with debugging - it can be a cache
 indicator or a quantitative indicator of the changes you have made.
 
-[Example](http://joxi.ru/Dr8eO04iKk4NDm){:target="_blank"}
+[Example](http://joxi.ru/Dr8eO04iKk4NDm)
 
 By default, the query panel is disabled. You can show it by adding a GET-request to the :site.com/?wpdbg   
 Or find in otfm-wp-debug.php string: <code>$wpdbg_settings['left_panel'] = false;</code>  
