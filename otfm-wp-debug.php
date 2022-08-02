@@ -4,7 +4,7 @@
   MU Plugin Name: OtFm WP-Debug
   Plugin URI: https://github.com/Otshelnik-Fm/otfm-wp-debug
   Description: OtFm WP-Debug is a MU-WordPress plugin for debug
-  Version: 1.2.0
+  Version: 1.3.0
   Author: Otshelnik-Fm
   Author URI: https://otshelnik-fm.ru/
   License: MIT
@@ -288,7 +288,7 @@ function wpdbg_meter_styles() {
 
 function wpdbg_meter_scripts() {
 	$js = '
-window.addEventListener("unload", function(event) {
+window.addEventListener("pagehide", function(event) {
     let wpdbgStore = [];
     
     let time = document.getElementById("wpdbg_mem");

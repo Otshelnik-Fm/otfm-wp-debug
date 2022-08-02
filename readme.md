@@ -58,6 +58,11 @@ If the panel is enabled in the config and interferes - enter <code>site.com/?pan
 
 ## Changelog
 
+**2022-08-02**  
+v1.3.0
+
+* Change unload to pagehide - pageSpeed recommendation
+
 **2022-08-01**  
 v1.2.0
 
